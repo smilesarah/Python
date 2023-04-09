@@ -5,35 +5,24 @@ t.speed(0)
 
 # 1Draw a green eight pointed star
 t.color("lime")
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(135)
-t.forward(200)
-t.right(45)
+for side in range (8):
+  t.forward(200)
+  t.right(135)
 
 # Move above the eight pointed star
-t.color("white")
+t.penup()
+t.right(45)
 t.forward(75)
 t.right(90)
+t.pendown()
 
 # Draw a purple equalateral triangle
 t.color("violet")
+for side in range(2):
+  t.forward(200)
+  t.left(120)
 t.forward(200)
-t.left(120)
-t.forward(200)
-t.left(120)
-t.forward(200)
+
 
 # Move to the left of the purple triangle
 t.color("white")
@@ -45,23 +34,19 @@ t.forward(60)
 # Draw a blue star
 t.color("blue")
 t.right(54)
-t.forward(175)
-t.right(144)
-t.forward(175)
-t.right(144)
-t.forward(175)
-t.right(144)
-t.forward(175)
-t.right(144)
+for side in range(4):
+  t.forward(175)
+  t.right(144)
 t.forward(175)
 
 # Move below the blue star
-t.color("white")
+t.penup()
 t.left(90)
 t.forward(90)
 t.left(90)
 t.forward(20)
 t.right(90)
+t.pendown()
 
 # Draw a red right triangle
 t.color("red")
@@ -72,29 +57,25 @@ t.left(135)
 t.forward(258)
 
 # Move between the green and red shapes
-t.color("white")
+t.penup()
 t.right(135)
 t.forward(120)
+t.pendown()
 
 # Draw a small orange square
 t.color("orange")
-t.forward(50)
-t.right(90)
-t.forward(50)
-t.right(90)
-t.forward(50)
-t.right(90)
-t.forward(50)
-t.left(90)
+for side in range(4):
+  t.forward(50)
+  t.right(90)
 t.forward(2)
 
 # Move below the square
-t.color("white")
+t.penup()
 t.forward(5)
 t.left(90)
 t.forward(75)
 t.left(90)
-t.forward(30)
+t.pendown()
 
 # Draw a yellow circle around the square
 t.color("yellow")
